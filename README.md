@@ -30,9 +30,9 @@ Sending a template based html email using core mail() function of php
 *$mailer = \Tecnotch\Factory::mailer('simple');
  
 $mailer
-	->setTo(array("tofeeq3@gmail.com" => "Tofeeq Rehman", "tof33q@gmail.com" => "Tof33q"))
-	->setCc(array("testing.tofeeq@gmail.com" => "Tofeeq Testing", "developer.tofeeq@gmail.com" => "Dev Tofeeq"))
-	->setFrom(array("info@tecnotch.com" => "Tecnotch"))
+	->setTo(array("email1@example.com" => "Tofeeq Rehman", "email2@example.com" => "Tof33q"))
+	->setCc(array("email3@example.com" => "Tofeeq Testing", "email4@example.com" => "Dev Tofeeq"))
+	->setFrom(array("sender@example.com" => "Tecnotch"))
 	->setSubject("Simple Email")
 	->setBody("This is simple email without template using simple mail function ")
 	->send();

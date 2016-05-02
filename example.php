@@ -6,9 +6,9 @@ use \Tecnotch;
 
  
 $mailer
-	->setTo(array("tofeeq3@gmail.com" => "Tofeeq Rehman", "tof33q@gmail.com" => "Tof33q"))
-	->setCc(array("testing.tofeeq@gmail.com" => "Tofeeq Testing", "developer.tofeeq@gmail.com" => "Dev Tofeeq"))
-	->setFrom(array("info@tecnotch.com" => "Tecnotch"))
+	->setTo(array("email1@example.com" => "Tofeeq Rehman", "email2@example.com" => "Tof33q"))
+	->setCc(array("email3@example.com" => "Tofeeq Testing", "email4@example.com" => "Dev Tofeeq"))
+	->setFrom(array("sender@example.com" => "Tecnotch"))
 	->setSubject("Simple Email")
 	->setBody("This is simple email without template using simple mail function ")
 	->send();
@@ -20,9 +20,9 @@ $mailer
 /*//with one attachment
 
  $mailer
-	->setTo(array("tofeeq3@gmail.com" => "Tofeeq Rehman", "tof33q@gmail.com" => "Tof33q"))
-	->setCc(array("testing.tofeeq@gmail.com" => "Tofeeq Testing", "developer.tofeeq@gmail.com" => "Dev Tofeeq"))
-	->setFrom(array("info@tecnotch.com" => "Tecnotch"))
+	->setTo(array("email1@example.com" => "Tofeeq Rehman", "email2@example.com" => "Tof33q"))
+	->setCc(array("email3@example.com" => "Tofeeq Testing", "email4@example.com" => "Dev Tofeeq"))
+	->setFrom(array("sender@example.com" => "Tecnotch"))
 	->addAttachment(__DIR__ . '/test.pdf', 'Test PDF', 'pdf')
 	->setSubject("Email with one attachment sent using simple mail function ")
 	->setBody("Please find attachment")
@@ -35,9 +35,9 @@ $mailer
 /*$mailer->reset();
 
 $mailer
-	->setTo(array("tofeeq3@gmail.com" => "Tofeeq Rehman", "tof33q@gmail.com" => "Tof33q"))
-	->setCc(array("testing.tofeeq@gmail.com" => "Tofeeq Testing", "developer.tofeeq@gmail.com" => "Dev Tofeeq"))
-	->setFrom(array("info@tecnotch.com" => "Tecnotch"))
+	->setTo(array("email1@example.com" => "Tofeeq Rehman", "email2@example.com" => "Tof33q"))
+	->setCc(array("email3@example.com" => "Tofeeq Testing", "email4@example.com" => "Dev Tofeeq"))
+	->setFrom(array("sender@example.com" => "Tecnotch"))
 	->addAttachment(__DIR__ . '/test1.pdf', 'Test PDF 1', 'pdf')
 	->addAttachment(__DIR__ . '/test2.pdf', 'Test PDF 2', 'pdf')
 	->addAttachment(__DIR__ . '/test3.pdf', 'Test PDF 3', 'pdf')
@@ -59,8 +59,8 @@ $mailer
 	->setPlaceholders($placeholders)
     ->setTemplatePath(__DIR__ . '/html/email/en')
     ->setTemplate("sample.html")
-    ->setTo(array("tofeeq3@gmail.com" => "Tofeeq Rehman"))
-    ->setFrom(array("info@tecnotch.com" => "Tecnotch"))
+    ->setTo(array("email1@example.com" => "Tofeeq Rehman"))
+    ->setFrom(array("sender@example.com" => "Tecnotch"))
     ->send();
  
 
@@ -71,9 +71,9 @@ $mailer
 $mailer = \Tecnotch\Factory::mailer('smtp');
 
 $mailer
-	->setTo(array("tofeeq3@gmail.com" => "Tofeeq Rehman", "tof33q@gmail.com" => "Tof33q"))
-	->setCc(array("testing.tofeeq@gmail.com" => "Tofeeq Testing", "developer.tofeeq@gmail.com" => "Dev Tofeeq"))
-	->setFrom(array("info@tecnotch.com" => "Tecnotch"))
+	->setTo(array("email1@example.com" => "Tofeeq Rehman", "email2@example.com" => "Tof33q"))
+	->setCc(array("email3@example.com" => "Tofeeq Testing", "email4@example.com" => "Dev Tofeeq"))
+	->setFrom(array("sender@example.com" => "Tecnotch"))
 	->setSubject("Simple Email using smtp")
 	->setBody("This is simple email without template using smtp ")
 	->send();
@@ -86,10 +86,10 @@ $mailer
 $mailer->reset();
 
 $mailer
-	->setTo(array("tofeeq3@gmail.com" => "Tofeeq Rehman", "tof33q@gmail.com" => "Tof33q"))
-	->setCc(array("testing.tofeeq@gmail.com" => "Tofeeq Testing", "developer.tofeeq@gmail.com" => "Dev Tofeeq"))
-	->setFrom(array("info@tecnotch.com" => "Tecnotch"))
-	->setReplyTo(array("info@tecnotch.com" => "Tecnotch-Suport"))
+	->setTo(array("email1@example.com" => "Tofeeq Rehman", "email2@example.com" => "Tof33q"))
+	->setCc(array("email3@example.com" => "Tofeeq Testing", "email4@example.com" => "Dev Tofeeq"))
+	->setFrom(array("sender@example.com" => "Tecnotch"))
+	->setReplyTo(array("sender@example.com" => "Tecnotch-Suport"))
 	->addAttachment(__DIR__ . '/test.pdf', 'Test PDF', 'pdf')
 	->setSubject("Email with one attachment sent using smtp ")
 	->setBody("Please find attachment")
@@ -102,10 +102,10 @@ $mailer
 $mailer->reset();
 
 $mailer
-	->setTo(array("tofeeq3@gmail.com" => "Tofeeq Rehman", "tof33q@gmail.com" => "Tof33q"))
-	->setCc(array("testing.tofeeq@gmail.com" => "Tofeeq Testing", "developer.tofeeq@gmail.com" => "Dev Tofeeq"))
-	->setFrom(array("info@tecnotch.com" => "Tecnotch"))
-	->setReplyTo(array("info@tecnotch.com" => "Tecnotch-Suport"))
+	->setTo(array("email1@example.com" => "Tofeeq Rehman", "email2@example.com" => "Tof33q"))
+	->setCc(array("email3@example.com" => "Tofeeq Testing", "email4@example.com" => "Dev Tofeeq"))
+	->setFrom(array("sender@example.com" => "Tecnotch"))
+	->setReplyTo(array("sender@example.com" => "Tecnotch-Suport"))
 	->addAttachment(__DIR__ . '/test1.pdf', 'Test PDF 1', 'pdf')
 	->addAttachment(__DIR__ . '/test2.pdf', 'Test PDF 2', 'pdf')
 	->addAttachment(__DIR__ . '/test3.pdf', 'Test PDF 3', 'pdf')
@@ -129,8 +129,8 @@ $mailer
 	->setPlaceholders($placeholders)
     ->setTemplatePath(__DIR__ . '/html/email/en')
     ->setTemplate("sample.html")
-    ->setTo(array("tofeeq3@gmail.com" => "Tofeeq Rehman"))
-    ->setFrom(array("info@tecnotch.com" => "Tecnotch"))
+    ->setTo(array("email1@example.com" => "Tofeeq Rehman"))
+    ->setFrom(array("sender@example.com" => "Tecnotch"))
     ->send();*/
 
 
@@ -145,10 +145,10 @@ $mailer
 	->setPlaceholders($placeholders)
     ->setTemplatePath(__DIR__ . '/html/email/en')
     ->setTemplate("sample.html")
-	->setTo(array("tofeeq3@gmail.com" => "Tofeeq Rehman", "tof33q@gmail.com" => "Tof33q"))
-	->setCc(array("testing.tofeeq@gmail.com" => "Tofeeq Testing", "developer.tofeeq@gmail.com" => "Dev Tofeeq"))
-	->setFrom(array("info@tecnotch.com" => "Tecnotch"))
-	->setReplyTo(array("info@tecnotch.com" => "Tecnotch-Suport"))
+	->setTo(array("email1@example.com" => "Tofeeq Rehman", "email2@example.com" => "Tof33q"))
+	->setCc(array("email3@example.com" => "Tofeeq Testing", "email4@example.com" => "Dev Tofeeq"))
+	->setFrom(array("sender@example.com" => "Tecnotch"))
+	->setReplyTo(array("sender@example.com" => "Tecnotch-Suport"))
 	->addAttachment(__DIR__ . '/test1.pdf', 'Test PDF 1', 'pdf')
 	->addAttachment(__DIR__ . '/test2.pdf', 'Test PDF 2', 'pdf')
 	->addAttachment(__DIR__ . '/test3.pdf', 'Test PDF 3', 'pdf')

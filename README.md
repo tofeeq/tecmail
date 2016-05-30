@@ -11,6 +11,7 @@ Tecmail is php library created for sending emails with an ease using html templa
 
 It is very easy to use, just create a mailer object and start sending emails.
 
+## Creating mailer object
 Create mailer which uses core php mail() function
 ```php
 $mailer = \Tecnotch\Factory::mailer('simple');
@@ -26,10 +27,10 @@ const SMTP_MAILER = 'swiftmailer';
 const SMTP_MAILER = 'phpmailer';
 ```
 
-# Examples
+## Examples
 
 
-Sending a simple email using native mail() function of php 
+### Sending a simple email using native mail() function of php 
 
 ```php
 $mailer = \Tecnotch\Factory::mailer('simple');
@@ -43,7 +44,7 @@ $mailer
 	->send();
 ```
 
-sending email based on html template and placeholders using native php mail() function 
+### sending email based on html template and placeholders using native php mail() function 
 
 ```php
 $mailer = \Tecnotch\Factory::mailer('simple');
@@ -60,7 +61,7 @@ $mailer
     ->send();
 ``` 
 
-Sending an email with one attachment using native php mail() function
+### Sending an email with one attachment using native php mail() function
 
 ```php
 $mailer = \Tecnotch\Factory::mailer('simple');
@@ -76,7 +77,7 @@ $mailer
 	->send();
 ```
 
-Sending an email with multiple attachments using native php mail() function
+### Sending an email with multiple attachments using native php mail() function
 
 ```php
 $mailer = \Tecnotch\Factory::mailer('simple');
@@ -117,7 +118,7 @@ $mailer->setSubject("Email with multiple attachments sent using simple mail func
 
 ```
 
-Sending email based on html template and placeholders with attachment(s) using native php mail() function 
+### Sending email based on html template and placeholders with attachment(s) using native php mail() function 
 
 ```php
 $mailer = \Tecnotch\Factory::mailer('simple');
@@ -140,7 +141,7 @@ $mailer
 ``` 
 
 
-Sending email using smtp (you can configure backend as phpmailer or swiftmailer in Tecnotch/Config.php)
+### Sending email using smtp (you can configure backend as phpmailer or swiftmailer in Tecnotch/Config.php)
 
 ```php
 //Default:
@@ -160,7 +161,7 @@ $mailer
 ; 
 ```
 
-Sending html template and placeholders based email using smtp 
+### Sending html template and placeholders based email using smtp 
 
 ```php
 $placeholders = array(
@@ -176,7 +177,7 @@ $mailer
     ->send();
 ```
 
-Sending an email with one attachment using smtp
+### Sending an email with one attachment using smtp
 
 ```php
 $mailer = \Tecnotch\Factory::mailer('smtp');
@@ -194,7 +195,7 @@ $mailer
 ; 
 ```
 
-Sending an email with multiple attachments using smtp
+### Sending an email with multiple attachments using smtp
 
 ```php
 $mailer = \Tecnotch\Factory::mailer('smtp');
@@ -214,7 +215,7 @@ $mailer
 ;
 ```
 
-Sending email with attachments based on html templates and placeholders using smtp
+### Sending email with attachments based on html templates and placeholders using smtp
 
 ```php
 $placeholders = array(

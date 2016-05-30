@@ -44,7 +44,7 @@ $mailer
 	->send();
 ```
 
-### sending email based on html template and placeholders using native php mail() function 
+### Sending email based on html template and placeholders using native php mail() function 
 
 ```php
 $mailer = \Tecnotch\Factory::mailer('simple');

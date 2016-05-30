@@ -8,8 +8,19 @@ Tecmail is php library created for sending emails with an ease using html templa
  * You can choose to send email by core php mail function or smtp
  * For smtp it has PHPMailer and SwiftMailer as backend, you can choose any of these by simple config option, default is SwiftMailer
 
-
 It is very easy to use, just create a mailer object and start sending emails.
+
+## Installation
+Git clone or download the repo in the directory where your mail sending script exists
+
+In your mail sending script just use
+```php
+require_once 'Tecnotch/bootstrap.php';
+use \Tecnotch;
+```
+Create mailer object and start sending emails 
+
+Please see example.php for usage
 
 ## Creating mailer object
 Create mailer which uses core php mail() function

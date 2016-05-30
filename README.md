@@ -19,6 +19,11 @@ $mailer = \Tecnotch\Factory::mailer('simple');
 Create SMTP mailer
 ```php
 $mailer = \Tecnotch\Factory::mailer('smtp');
+//You can configure backend as phpmailer or swiftmailer in Tecnotch/Config.php) 
+//Default: 
+const SMTP_MAILER = 'swiftmailer'; 
+//you can use phpmailer as below 
+const SMTP_MAILER = 'phpmailer';
 ```
 
 # Examples
@@ -136,12 +141,13 @@ $mailer
 
 
 Sending email using smtp (you can configure backend as phpmailer or swiftmailer in Tecnotch/Config.php)
-Default:
-const SMTP_MAILER = 'swiftmailer';
-you can use phpmailer as below
-const SMTP_MAILER = 'phpmailer';
 
 ```php
+//Default:
+//const SMTP_MAILER = 'swiftmailer';
+//you can use phpmailer as below
+//const SMTP_MAILER = 'phpmailer';
+
 $mailer = \Tecnotch\Factory::mailer('smtp');
 $mailer
 	->setTo(array("email1@example.com" => "Tofeeq Rehman", "email2@example.com" => "Tof33q"))

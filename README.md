@@ -20,7 +20,7 @@ use \Tecnotch;
 ```
 Create mailer object and start sending emails 
 
-Please see ** example.php ** for usage
+Please see **example.php** for usage
 
 ## Creating mailer object
 Create mailer which uses core php mail() function

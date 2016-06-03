@@ -13,6 +13,9 @@ It is very easy to use, just create a mailer object and start sending emails.
 ## Installation
 Git clone or download the repo in the directory where your mail sending script exists
 
+## Configuration
+open Tecnotch/Config.php and provide your smtp host name, user name and password 
+
 In your mail sending script just use
 ```php
 require_once 'Tecnotch/bootstrap.php';

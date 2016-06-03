@@ -16,6 +16,20 @@ Git clone or download the repo in the directory where your mail sending script e
 ## Configuration
 open Tecnotch/Config.php and provide your smtp host name, user name and password 
 
+```
+const SMTP_HOST = 'smtp.gmail.com'; //provide your smtp host here 
+const SMTP_PORT = 465;		//provide smtp port
+//const SMTP_PORT = 587;
+
+ const SMTP_USER = 'your gmail id'; //provide your smpt username
+ const SMTP_PASS = 'your gmail password'; //provide your smtp password
+
+ const SMTP_MAILER = 'swiftmailer';  //configure smtp backend 
+
+ //or you can use phpmailer as below
+ //const SMTP_MAILER = 'phpmailer';
+```
+
 In your mail sending script just use
 ```php
 require_once 'Tecnotch/bootstrap.php';

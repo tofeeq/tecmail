@@ -16,7 +16,7 @@ Git clone or download the repo in the directory where your mail sending script e
 ## Configuration
 open Tecnotch/Config.php and provide your smtp host name, user name and password 
 
-```
+```php
 const SMTP_HOST = 'smtp.gmail.com'; //provide your smtp host here 
 const SMTP_PORT = 465;		//provide smtp port
 //const SMTP_PORT = 587;

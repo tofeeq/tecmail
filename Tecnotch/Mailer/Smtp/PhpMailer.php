@@ -45,18 +45,18 @@ class PhpMailer extends Mailer\Abs {
 			$mail->addAddress($email, $name);     // Add a recipient
 		}
 		
-		if (!empty($this->getReplyTo())) {
+		if ($this->getReplyTo()) {
 			$mail->addReplyTo(key($this->getReplyTo()), current($this->getReplyTo()));	
 		}
 
-		if (!empty($this->getCc())) {
+		if ($this->getCc()) {
 			foreach ($this->getCc() as $email => $name) {
 				$mail->addCC($email, $name);     // Add a recipient
 			}
 		}
 		
 
-		if (!empty($this->getBcc())) {
+		if ($this->getBcc()) {
 			foreach ($this->getBcc() as $email => $name) {
 				$mail->addBCC($email, $name);     // Add a recipient
 			}

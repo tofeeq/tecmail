@@ -47,12 +47,12 @@ class Swift extends Mailer\Abs {
 			  //->attach(Swift_Attachment::fromPath('my-document.pdf'))
 			  ;
 			  
-		if (!empty($this->getCc())) {
+		if ($this->getCc()) {
 			$message->setCc($this->getCc());
 		}
 		
 
-		if (!empty($this->getReplyTo())) {
+		if ($this->getReplyTo()) {
 			$message->setReplyTo($this->getReplyTo());
 		}
 		
